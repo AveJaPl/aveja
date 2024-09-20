@@ -96,7 +96,7 @@ export default function Growth() {
       completionDate: null,
       certificate: null,
       icon: <FaNodeJs className="text-green-600" />, // Node.js (green color)
-    },
+    }
   ];
   const sortedCourses = courses.sort((a, b) => {
     const statusOrder: { [key in CourseStatus]: number } = {

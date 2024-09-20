@@ -18,7 +18,7 @@ export default function Projects() {
   return (
     <div>
       <h2 className="text-3xl font-bold text-center mb-6">🚀 My Projects</h2>
-      <div className="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+      <div className="grid gap-6 grid-cols-1 md:grid-cols-2 xl:grid-cols-3">
         {projects.map((project, index) => (
           <ProjectBlock key={index} {...project} />
         ))}
