@@ -110,7 +110,7 @@ export default function AboutMe() {
                     alt={`${job.company} logo`}
                     width={job.size}
                     height={job.size}
-                    className="rounded object-contain"
+                    className="rounded object-contain lg:block hidden"
                   />
                 </CardHeader>
                 <div className="flex justify-between">
@@ -131,7 +131,7 @@ export default function AboutMe() {
                     alt={`${school.schoolName} logo`}
                     width={school.size}
                     height={school.size}
-                    className="rounded object-contain"
+                    className="rounded object-contain hidden lg:block"
                   />
                 </CardHeader>
                 <div className="flex justify-between">
