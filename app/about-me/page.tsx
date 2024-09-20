@@ -88,7 +88,7 @@ export default function AboutMe() {
   
 
   return (
-    <div className="flex flex-col gap-4">
+    <div className="grid grid-rows-[auto, 1fr] gap-4 h-full">
       {/* Career & Education Section */}
       <Card className="w-full flex justify-between p-2 shadow-lg">
         {/* Main Content Section */}
@@ -148,13 +148,13 @@ export default function AboutMe() {
         </div>
 
         {/* Footer with Image */}
-        <CardFooter className="hidden xl:w-1/5 xl:flex justify-center  items-start pt-6">
+        <CardFooter className="hidden xl:w-1/5 xl:flex justify-center items-center pt-6">
           <Image
             src="/about-me.jpg"
             alt="Filip Piątek"
             width={270}
             height={270}
-            className="rounded-lg object-cover hidden xl:block"
+            className="rounded-lg object-cover hidden xl:block h-4/5 max-h-[600px]"
           />
         </CardFooter>
       </Card>
@@ -162,13 +162,13 @@ export default function AboutMe() {
       {/* Hobbies Section */}
       <Card className="w-full flex justify-between p-2 shadow-lg">
         {/* Footer with Image */}
-        <CardFooter className="hidden xl:w-1/5 xl:flex justify-center items-start pt-6">
+        <CardFooter className="hidden xl:w-1/5 xl:flex justify-center items-center pt-6">
           <Image
             src="/me-fisherman.jpg"
             alt="Filip Piątek"
             width={270}
             height={270}
-            className="rounded-lg object-cover hidden xl:block"
+            className="rounded-lg object-cover hidden xl:block h-4/5 max-h-[600px]"
           />
         </CardFooter>
         {/* Main Content Section */}

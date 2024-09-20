@@ -8,7 +8,7 @@ import Inspirations from "./components/landingPage/Inspirations";
 
 export default function Home() {
   return (
-    <div className="flex flex-col gap-4">
+    <div className="grid grid-rows-[auto,auto, 1fr] gap-4 h-full">
       <div className="w-full flex flex-col lg:flex-row gap-4 ">
         <ProfileCard />
         <DescriptionCard />
