@@ -16,7 +16,20 @@ const geistMono = localFont({
 
 export const metadata: Metadata = {
   title: "Filip Piątek",
-  description: "Filip Piątek - Full-Stack Developer passionate about JavaScript, TypeScript, Next.js, and building innovative web applications.",
+  description:
+    "Filip Piątek - Full-Stack Developer passionate about JavaScript, TypeScript, Next.js, and building innovative web applications.",
+  openGraph: {
+    title: "Filip Piątek - Full-Stack Developer",
+    description:
+      "Explore Filip Piątek's portfolio, featuring web development projects, skills, and experience with technologies like JavaScript, TypeScript, and Next.js.",
+    url: "https://filip-piatek.netlify.app",
+    images: [
+      {
+        url: "/me.png",
+        alt: "Filip Piątek",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({
