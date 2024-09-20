@@ -85,12 +85,11 @@ export default function AboutMe() {
       icon: <FaCode size={24} className="text-purple-500" />,
     },
   ];
-  
 
   return (
     <div className="grid grid-rows-[auto, 1fr] gap-4 h-full">
       {/* Career & Education Section */}
-      <Card className="w-full flex justify-between p-2 shadow-lg">
+      <Card className="w-full flex justify-between px-2 shadow-lg">
         {/* Main Content Section */}
         <div className=" w-full xl:w-4/5 flex flex-col">
           {/* Career Header */}
@@ -117,7 +116,9 @@ export default function AboutMe() {
                   <CardContent className="text-muted-foreground">
                     {job.title}
                   </CardContent>
-                  <CardFooter className="text-muted-foreground">{job.date}</CardFooter>
+                  <CardFooter className="text-muted-foreground">
+                    {job.date}
+                  </CardFooter>
                 </div>
               </Card>
             ))}
@@ -148,7 +149,7 @@ export default function AboutMe() {
         </div>
 
         {/* Footer with Image */}
-        <CardFooter className="hidden xl:w-1/5 xl:flex justify-center items-center pt-6">
+        <CardFooter className="hidden xl:w-1/5 xl:flex justify-center items-center p-0">
           <Image
             src="/about-me.jpg"
             alt="Filip Piątek"
@@ -160,9 +161,9 @@ export default function AboutMe() {
       </Card>
 
       {/* Hobbies Section */}
-      <Card className="w-full flex justify-between p-2 shadow-lg">
+      <Card className="w-full flex px-2 justify-between shadow-lg">
         {/* Footer with Image */}
-        <CardFooter className="hidden xl:w-1/5 xl:flex justify-center items-center pt-6">
+        <CardFooter className="hidden xl:w-1/5 xl:flex justify-center items-center p-0">
           <Image
             src="/me-fisherman.jpg"
             alt="Filip Piątek"
@@ -174,13 +175,13 @@ export default function AboutMe() {
         {/* Main Content Section */}
         <div className="w-full xl:w-4/5 flex flex-col">
           {/* Career Header */}
-          <CardHeader className="text-2xl font-bold flex flex-row justify-end items-center mb-2 mr-[-10px]">
+          <CardHeader className="text-2xl font-bold grid grid-cols-[auto,auto] justify-end items-center">
             <h3 className="mr-4">Hobbies</h3>
             <FaHeart size={40} className="text-red-600" />
           </CardHeader>
 
           {/* Career and Education Grid */}
-          <CardContent className="grid grid-cols-1 xl:grid-cols-3 gap-4 h-full ">
+          <CardContent className="grid grid-cols-1 xl:grid-cols-3 gap-4">
             {hobbies.map((hobby, index) => (
               <Card key={index} className="flex flex-col shadow-sm rounded-lg">
                 <CardHeader className="text-lg font-semibold flex flex-row items-center justify-between">
