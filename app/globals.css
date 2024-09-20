@@ -10,31 +10,31 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 20 14.3% 4.1%;
-    --card: 0 0% 100%;
-    --card-foreground: 20 14.3% 4.1%;
-    --popover: 0 0% 100%;
-    --popover-foreground: 20 14.3% 4.1%;
-    --primary: 24.6 95% 53.1%;
-    --primary-foreground: 60 9.1% 97.8%;
-    --secondary: 60 4.8% 95.9%;
-    --secondary-foreground: 24 9.8% 10%;
-    --muted: 60 4.8% 95.9%;
-    --muted-foreground: 25 5.3% 44.7%;
-    --accent: 60 4.8% 95.9%;
-    --accent-foreground: 24 9.8% 10%;
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 60 9.1% 97.8%;
-    --border: 20 5.9% 90%;
-    --input: 20 5.9% 90%;
-    --ring: 24.6 95% 53.1%;
+    --background: 210 16% 95%; /* Delikatny, jasny niebieski odcień */
+    --foreground: 220 20% 15%; /* Ciemniejszy szaro-niebieski odcień */
+    --card: 0 0% 98%; /* Bardzo jasny szary odcień dla kart */
+    --card-foreground: 220 14% 10%; /* Ciemny odcień tekstu na kartach */
+    --popover: 0 0% 98%; /* Jasny odcień tła dla okienek popover */
+    --popover-foreground: 220 14% 10%; /* Ciemny odcień tekstu */
+    --primary: 24.6 90% 60%; /* Pomarańczowy dla przycisków i elementów interaktywnych */
+    --primary-foreground: 210 10% 97%; /* Jasny odcień na pomarańczowym tle */
+    --secondary: 200 10% 90%; /* Pastelowy niebieski */
+    --secondary-foreground: 210 20% 20%; /* Ciemniejszy, kontrastujący odcień tekstu */
+    --muted: 200 10% 90%; /* Pastelowy szary-niebieski */
+    --muted-foreground: 210 10% 40%; /* Ciemniejszy odcień na tle muted */
+    --accent: 24.6 90% 60%; /* Pomarańczowy dla akcentów */
+    --accent-foreground: 210 20% 15%; /* Ciemniejszy odcień do akcentów */
+    --destructive: 0 72% 50%; /* Czerwony */
+    --destructive-foreground: 210 10% 95%; /* Jasny odcień na czerwonym tle */
+    --border: 210 10% 85%; /* Delikatny, neutralny niebieski */
+    --input: 210 10% 85%; /* Ten sam odcień dla pól tekstowych */
+    --ring: 24.6 90% 60%; /* Pomarańczowy dla focus ringów */
     --radius: 0.5rem;
-    --chart-1: 12 76% 61%;
-    --chart-2: 173 58% 39%;
-    --chart-3: 197 37% 24%;
-    --chart-4: 43 74% 66%;
-    --chart-5: 27 87% 67%;
+    --chart-1: 30 100% 50%; /* Pomarańczowy dla wykresów */
+    --chart-2: 160 80% 60%; /* Zielony */
+    --chart-3: 45 100% 55%; /* Żółty */
+    --chart-4: 340 75% 65%; /* Fioletowy */
+    --chart-5: 15 85% 65%; /* Czerwony */
   }
 
   .dark {
@@ -88,8 +88,6 @@
 .animate-fadeIn {
   animation: fadeIn 0.5s ease-in-out forwards;
 }
-
-
 
 @keyframes irregularPulse {
   0% {

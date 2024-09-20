@@ -28,7 +28,7 @@ export default function ProjectBlock(project: Project) {
                   height={70}
                   className="rounded"
                 />
-                <CardTitle className="text-xl font-bold text-gray-100">
+                <CardTitle className="text-xl font-bold">
                   {project.name}
                 </CardTitle>
               </div>

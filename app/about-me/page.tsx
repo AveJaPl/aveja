@@ -19,21 +19,24 @@ export default function AboutMe() {
       title: "Data Entry Intern",
       company: "Społem PSS",
       date: "2021",
-      logo: "/spolem.png",
+      logo_darkmode: "/spolem.png",
+      logo_lightmode: "/spolem.png",
       size: 40,
     },
     {
       title: "Marketing Assistant",
       company: "Tubes International",
       date: "2022-2024",
-      logo: "/tubes_black.svg",
+      logo_darkmode: "/tubes_black.svg",
+      logo_lightmode: "/tubes_white.png",
       size: 120,
     },
     {
       title: "Apprentice",
       company: "Spice Solutions",
       date: "2024-2025",
-      logo: "/spice.png",
+      logo_darkmode: "/spice.png",
+      logo_lightmode: "/spice_white.png",
       size: 140,
     },
   ];
@@ -53,7 +56,8 @@ export default function AboutMe() {
           score: "95%",
         },
       ],
-      logo: "/zsk.png",
+      logo_darkmode: "/zsk.png",
+      logo_lightmode: "/zsk.png",
       size: 45,
     },
     // {
@@ -105,11 +109,18 @@ export default function AboutMe() {
                 <CardHeader className="text-lg font-semibold flex flex-row items-center justify-between">
                   <span>{job.company}</span>
                   <Image
-                    src={job.logo}
+                    src={job.logo_darkmode}
                     alt={`${job.company} logo`}
                     width={job.size}
                     height={job.size}
-                    className="rounded object-contain lg:block hidden"
+                    className="rounded object-contain lg:dark:block hidden"
+                  />
+                  <Image
+                    src={job.logo_lightmode}
+                    alt={`${job.company} logo`}
+                    width={job.size}
+                    height={job.size}
+                    className="rounded object-contain lg:dark:hidden"
                   />
                 </CardHeader>
                 <div className="flex justify-between">
@@ -128,7 +139,7 @@ export default function AboutMe() {
                 <CardHeader className="text-lg font-semibold flex flex-row items-center justify-between">
                   <span>{school.schoolName}</span>
                   <Image
-                    src={school.logo}
+                    src={school.logo_darkmode}
                     alt={`${school.schoolName} logo`}
                     width={school.size}
                     height={school.size}

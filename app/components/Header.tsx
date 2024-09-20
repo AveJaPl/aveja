@@ -6,7 +6,7 @@ import {
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
 import Link from "next/link";
-// import { ModeToggle } from "./ModeToggle";
+import { ModeToggle } from "./ModeToggle";
 
 function Header() {
   const routes = [
@@ -32,7 +32,7 @@ function Header() {
       </NavigationMenu>
       {/* Przycisk po prawej stronie */}
       <div className="ml-auto">
-        {/* <ModeToggle /> */}
+        <ModeToggle />
       </div>
     </div>
   );
