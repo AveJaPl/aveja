@@ -154,7 +154,7 @@ export default function AboutMe() {
             alt="Filip Piątek"
             width={270}
             height={270}
-            className="rounded-full object-cover hidden xl:block"
+            className="rounded-lg object-cover hidden xl:block"
           />
         </CardFooter>
       </Card>
@@ -168,7 +168,7 @@ export default function AboutMe() {
             alt="Filip Piątek"
             width={270}
             height={270}
-            className="rounded-full object-cover hidden xl:block"
+            className="rounded-lg object-cover hidden xl:block"
           />
         </CardFooter>
         {/* Main Content Section */}

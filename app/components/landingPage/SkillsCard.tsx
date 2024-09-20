@@ -18,7 +18,7 @@ export default function SkillsCard() {
   const getRandomDuration = () => `${1 + Math.random() * 1.5}s`; // Losowy czas trwania od 1 do 2.5 sekundy
 
   return (
-    <Card className="w-full lg:w-2/3 p-3 overflow-hidden relative">
+    <Card className="w-full lg:w-2/3 overflow-hidden relative">
       <CardHeader className="text-xl font-bold">Most developed skills</CardHeader>
       <CardContent className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
         {skills.map((skill, index) => (
@@ -27,7 +27,7 @@ export default function SkillsCard() {
             className="skill-item border border-border p-4 rounded-lg flex flex-col items-center justify-center transition-transform duration-500 hover:scale-105"
           >
             <div
-              className="icon-container text-3xl cursor-pointer mb-2"
+              className="icon-container text-2xl cursor-pointer mb-2"
               style={{
                 animation: `irregularPulse ${getRandomDuration()} infinite`,
                 animationDelay: getRandomDelay(),

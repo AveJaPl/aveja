@@ -48,9 +48,9 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <div className="min-h-screen flex flex-col">
+          <div className="h-screen flex flex-col">
             <Header />
-            <main className="flex-grow p-6">{children}</main>
+            <main className="flex-grow p-2 md:p-4 xl:p-6">{children}</main>
           </div>
         </ThemeProvider>
       </body>

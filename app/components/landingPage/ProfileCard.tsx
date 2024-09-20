@@ -32,14 +32,14 @@ import {
       }
     ]
     return (
-      <Card className={cn("w-full lg:w-2/5 grid grid-cols-[auto_1fr] gap-4 p-6")}>
+      <Card className={cn("w-full lg:w-2/5 grid grid-cols-[auto_1fr] gap-4 px-4")}>
         <div className="flex items-center justify-center">
           <CardContent className="p-0">
             <Image
               src="/me.jpg"
               alt="Picture of Filip Piątek"
-              width={180}
-              height={180}
+              width={150}
+              height={150}
               className="rounded-full"
             />
           </CardContent>

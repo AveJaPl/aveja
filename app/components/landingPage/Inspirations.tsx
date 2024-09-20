@@ -2,7 +2,7 @@ import { Card, CardContent, CardFooter, CardHeader } from "@/components/ui/card"
 
 export default function Inspirations() {
   return (
-    <Card className="w-full lg:w-1/3 p-6 overflow-hidden relative">
+    <Card className="w-full lg:w-1/3 p-4 overflow-hidden relative">
       <div className="flex">
         {/* Lewy div z tekstem, który pozostaje stały */}
         <div className="flex flex-col w-full lg:max-w-xs">

@@ -16,7 +16,7 @@ function Header() {
     { name: "Growth", href: "/growth" },
   ]
   return (
-    <div className="relative w-full flex items-center p-6 outline-dashed outline-2 h-20 dark:outline-gray-600 outline-orange-400">
+    <div className="relative w-full flex items-center p-6 h-20 outline outline-2 outline-border">
       <NavigationMenu className="absolute left-1/2 transform -translate-x-1/2">
         <NavigationMenuList className="flex space-x-4">
           {routes.map((route, index) => (

@@ -2,7 +2,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 export default function DescriptionCard() {
   return (
-    <Card className="w-full lg:w-3/5 p-6 flex flex-col lg:grid lg:grid-cols-[auto_1fr] lg:gap-4">
+    <Card className="w-full lg:w-3/5 p-4 flex flex-col lg:grid lg:grid-cols-[auto_1fr] lg:gap-4">
       <CardHeader>
         <CardTitle>Hey there! 👋</CardTitle>
       </CardHeader>

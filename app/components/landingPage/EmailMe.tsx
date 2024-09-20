@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 
 export default function EmailMe() {
   return (
-    <Card className="w-full lg:w-1/3 p-6 flex flex-col items-center justify-center">
+    <Card className="w-full lg:w-1/3 p-4 flex flex-col items-center justify-center">
       <CardHeader>
         <CardTitle>Get in touch</CardTitle>
         <CardDescription>
