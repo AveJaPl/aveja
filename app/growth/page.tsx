@@ -1,4 +1,4 @@
-import {FaNodeJs, FaReact, FaRobot, FaRocket } from "react-icons/fa";
+import {FaCss3, FaGit, FaNodeJs, FaReact, FaRobot, FaRocket } from "react-icons/fa";
 import GrowthBlock from "../components/GrowthBlock";
 import { SiGraphql, SiNextdotjs, SiTypescript, SiExpress } from "react-icons/si";
 
@@ -72,10 +72,10 @@ export default function Growth() {
     },
     {
       name: "Building Apps with Third-Party Integrations",
-      status: "In Progress",
+      status: "Completed",
       plannedStartDate: null,
-      expectedCompletion: "December 2024",
-      completionDate: null,
+      expectedCompletion: null,
+      completionDate: "September 2024",
       certificate: null,
       icon: <FaNodeJs className="text-green-600" />, // Node.js (green color)
     },
@@ -96,6 +96,32 @@ export default function Growth() {
       completionDate: null,
       certificate: null,
       icon: <FaNodeJs className="text-green-600" />, // Node.js (green color)
+    },
+    {
+      name: "Git Started with GitHub",
+      status: "In Progress",
+      plannedStartDate: null,
+      expectedCompletion: "September 2024",
+      completionDate: null,
+      certificate: null,
+      icon: <FaGit className="text-orange-500" />
+    }, {
+      name: "Advanced CSS Development",
+      status: "Planned",
+      plannedStartDate: "September 2024",
+      expectedCompletion: "October 2024",
+      completionDate: null,
+      certificate: null,
+      icon: <FaCss3 className="text-blue-500" />
+    },
+    {
+      name: "Intermediate React.js",
+      status: "Planned",
+      plannedStartDate: "October 2024",
+      expectedCompletion: "October 2024",
+      completionDate: null,
+      certificate: null,
+      icon: <FaReact className="text-blue-500" />
     }
   ];
   const sortedCourses = courses.sort((a, b) => {
