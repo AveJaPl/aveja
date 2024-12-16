@@ -3,13 +3,13 @@ import ProjectBlock from "../components/ProjectBlock";
 export default function Projects() {
   const projects = [
     {
-      logo: "/progresio_logo.png", // replace with actual image path
-      name: "Progresio App",
+      logo: "/aurora_logo.png", // replace with actual image path
+      name: "Aurora",
       description:
         "An application to track user progress on custom parameters.",
       targetAudience: "Fitness enthusiasts, people who want to track their progress.",
-      screenshots: ["/progresio1.png", "/progresio2.png", "/progresio3.png"], // multiple screenshots for carousel
-      link: "https://progresio.netlify.app",
+      screenshots: ["/aurora1.png", "/aurora2.png", "/aurora3.png"], // multiple screenshots for carousel
+      link: "https://aurora-tracker.netlify.app",
     },
   
     // Add more projects as needed
