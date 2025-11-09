@@ -1,4 +1,4 @@
-import { FaCss3, FaGit, FaNodeJs, FaReact, FaRobot, FaRocket, FaUtensils } from "react-icons/fa";
+import { FaCss3, FaNodeJs, FaReact, FaRobot, FaRocket } from "react-icons/fa";
 import GrowthBlock from "../components/GrowthBlock";
 import { SiGraphql, SiNextdotjs, SiTypescript, SiExpress } from "react-icons/si";
 
