@@ -1,4 +1,4 @@
-import {FaCss3, FaGit, FaNodeJs, FaReact, FaRobot, FaRocket } from "react-icons/fa";
+import { FaCss3, FaGit, FaNodeJs, FaReact, FaRobot, FaRocket, FaUtensils } from "react-icons/fa";
 import GrowthBlock from "../components/GrowthBlock";
 import { SiGraphql, SiNextdotjs, SiTypescript, SiExpress } from "react-icons/si";
 
@@ -80,10 +80,10 @@ export default function Growth() {
       icon: <FaNodeJs className="text-green-600" />, // Node.js (green color)
     },
     {
-      name: "GraphQL with React: The Complete Developers Guide",
-      status: "Planned",
-      plannedStartDate: "October 2024",
-      expectedCompletion: "January 2025",
+      name: "GraphQL Course for Beginners",
+      status: "In Progress",
+      plannedStartDate: null,
+      expectedCompletion: "November 2025",
       completionDate: null,
       certificate: null,
       icon: <SiGraphql className="text-pink-500" />, // GraphQL (pink color)
@@ -91,38 +91,30 @@ export default function Growth() {
     {
       name: "NodeJS: Advanced Concepts",
       status: "Planned",
-      plannedStartDate: "November 2024",
-      expectedCompletion: "February 2025",
+      plannedStartDate: "January 2026",
+      expectedCompletion: "March 2026",
       completionDate: null,
       certificate: null,
       icon: <FaNodeJs className="text-green-600" />, // Node.js (green color)
     },
     {
-      name: "Git Started with GitHub",
-      status: "In Progress",
-      plannedStartDate: null,
-      expectedCompletion: "September 2024",
-      completionDate: null,
-      certificate: null,
-      icon: <FaGit className="text-orange-500" />
-    }, {
       name: "Advanced CSS Development",
       status: "Planned",
-      plannedStartDate: "September 2024",
-      expectedCompletion: "October 2024",
+      plannedStartDate: "December 2025",
+      expectedCompletion: "January 2026",
       completionDate: null,
       certificate: null,
       icon: <FaCss3 className="text-blue-500" />
     },
     {
       name: "Intermediate React.js",
-      status: "Planned",
-      plannedStartDate: "October 2024",
-      expectedCompletion: "October 2024",
-      completionDate: null,
+      status: "Completed",
+      plannedStartDate: null,
+      expectedCompletion: null,
+      completionDate: "March 2025",
       certificate: null,
       icon: <FaReact className="text-blue-500" />
-    }
+    },
   ];
   const sortedCourses = courses.sort((a, b) => {
     const statusOrder: { [key in CourseStatus]: number } = {

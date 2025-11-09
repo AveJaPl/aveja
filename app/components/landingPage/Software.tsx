@@ -4,17 +4,17 @@ import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { SiVisualstudiocode, SiDocker, SiPostman, SiJira, SiGithub, SiBitbucket } from "react-icons/si";
 
 export default function Software() {
-    const software = [
-        { name: "GitHub", icon: <SiGithub className="mr-2 text-white" />, experience: "4 years" },
-        { name: "Docker", icon: <SiDocker className="mr-2 text-blue-600" />, experience: "3 years" },
-        { name: "Postman", icon: <SiPostman className="mr-2 text-orange-500" />, experience: "3 years" },
-        { name: "Jira", icon: <SiJira className="mr-2 text-blue-400" />, experience: "1 year" },
-        { name: "Bitbucket", icon: <SiBitbucket className="mr-2 text-blue-500" />, experience: "1 year" },
-        { name: "VS Code", icon: <SiVisualstudiocode className="mr-2 text-blue-500" />, experience: "5 years" },
-      ];
+  const software = [
+    { name: "GitHub", icon: <SiGithub className="mr-2 text-white" />, startDate: 2020 },
+    { name: "Docker", icon: <SiDocker className="mr-2 text-blue-600" />, startDate: 2021 },
+    { name: "Postman", icon: <SiPostman className="mr-2 text-orange-500" />, startDate: 2021 },
+    { name: "Jira", icon: <SiJira className="mr-2 text-blue-400" />, startDate: 2022 },
+    { name: "Bitbucket", icon: <SiBitbucket className="mr-2 text-blue-500" />, startDate: 2022 },
+    { name: "VS Code", icon: <SiVisualstudiocode className="mr-2 text-blue-500" />, startDate: 2018 },
+  ];
 
-    const getRandomDelay = () => `${Math.random() * 2}s`; // Losowa przerwa od 0 do 2 sekund
-    const getRandomDuration = () => `${2 + Math.random() * 1.5}s`; // Losowy czas trwania od 2 do 3.5 sekundy
+  const getRandomDelay = () => `${Math.random() * 2}s`; // Losowa przerwa od 0 do 2 sekund
+  const getRandomDuration = () => `${2 + Math.random() * 1.5}s`; // Losowy czas trwania od 2 do 3.5 sekundy
 
   return (
     <Card className="w-full lg:w-2/3 p-3 overflow-hidden relative">
@@ -36,7 +36,11 @@ export default function Software() {
             </div>
             <div className="text-xl font-semibold">{skill.name}</div>
             <div className="text-sm text-gray-700 dark:text-gray-300 mt-1">
-              {skill.experience}
+              {
+                new Date().getFullYear() - skill.startDate}{" "}years
+            </div>
+            <div className="pt-2 text-xs text-gray-500 dark:text-gray-600">
+              Since {skill.startDate}
             </div>
           </div>
         ))}

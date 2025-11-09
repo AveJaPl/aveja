@@ -31,9 +31,9 @@ function Header() {
         </NavigationMenuList>
       </NavigationMenu>
       {/* Przycisk po prawej stronie */}
-      <div className="ml-auto">
+      {/* <div className="ml-auto">
         <ModeToggle />
-      </div>
+      </div> */}
     </div>
   );
 }
